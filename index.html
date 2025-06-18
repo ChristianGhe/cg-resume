@@ -199,6 +199,148 @@
             line-height: 1.5;
         }
         
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 14px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header .title {
+                font-size: 1.1em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 0.9em;
+            }
+            
+            .section h2 {
+                font-size: 1.2em;
+                padding-left: 10px;
+            }
+            
+            .company {
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+            
+            .company-duration {
+                display: block;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            
+            .position {
+                font-size: 1em;
+                margin: 8px 0 5px 0;
+            }
+            
+            .role {
+                padding-left: 10px;
+                margin-left: 5px;
+            }
+            
+            .achievements li {
+                font-size: 13px;
+                line-height: 1.4;
+                margin-bottom: 10px;
+            }
+            
+            .tech-stack {
+                font-size: 13px;
+                padding: 10px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .skill-category {
+                padding: 12px;
+            }
+            
+            .degree {
+                font-size: 1em;
+                line-height: 1.3;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                font-size: 13px;
+            }
+            
+            .header {
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .section {
+                margin-bottom: 25px;
+            }
+            
+            .section h2 {
+                font-size: 1.1em;
+                padding-left: 8px;
+                border-left-width: 3px;
+            }
+            
+            .job {
+                margin-bottom: 20px;
+            }
+            
+            .company {
+                font-size: 1em;
+            }
+            
+            .position {
+                font-size: 0.95em;
+            }
+            
+            .role {
+                padding-left: 8px;
+                margin-left: 3px;
+                border-left-width: 1px;
+            }
+            
+            .achievements li {
+                font-size: 12px;
+                padding-left: 15px;
+            }
+            
+            .achievements li:before {
+                font-size: 12px;
+            }
+            
+            .tech-stack {
+                font-size: 12px;
+                padding: 8px;
+            }
+            
+            .skill-category {
+                padding: 10px;
+            }
+            
+            .skill-category h4 {
+                font-size: 0.95em;
+            }
+            
+            .skill-category p {
+                font-size: 0.9em;
+            }
+        }
+
         @media print {
             * {
                 -webkit-print-color-adjust: exact !important;
@@ -388,7 +530,7 @@
         <div class="skills-grid">
             <div class="skill-category">
                 <h4>Programming Languages</h4>
-                <p>Kotlin (Advanced), Python, Java, C#, C++</p>
+                <p>Python (Advanced), Kotlin (Advanced), Java, C#, C++</p>
             </div>
             
             <div class="skill-category">
