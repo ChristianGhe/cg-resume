@@ -84,17 +84,31 @@
             color: #2c3e50;
         }
         
+        .company-duration {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
         .position {
             font-size: 1.1em;
             color: #e74c3c;
             font-weight: 600;
-            margin: 5px 0;
+            margin: 10px 0 5px 0;
         }
         
         .duration {
             font-style: italic;
             color: #7f8c8d;
             font-size: 0.95em;
+        }
+        
+        .role {
+            margin-bottom: 25px;
+            border-left: 2px solid #ecf0f1;
+            padding-left: 15px;
+            margin-left: 10px;
         }
         
         .job-description {
@@ -258,74 +272,71 @@
         
         <div class="job">
             <div class="job-header">
-                <div class="company">Stefanini Romania SRL, Bucharest</div>
+                <div class="company">Stefanini Romania SRL, Bucharest <span class="company-duration">May 2016 – Present</span></div>
+            </div>
+            
+            <div class="role">
                 <div class="position">Senior Python Software Engineer - Arka Autonomous Locker System</div>
                 <div class="duration">January 2024 – Present</div>
-            </div>
-            <div class="job-description">
-                <p>Architected and developed a comprehensive autonomous locker management system using Python, managing IoT hardware integration, multi-vendor communication protocols, and real-time embedded systems control for smart parcel delivery infrastructure.</p>
-                
-                <div class="achievements">
-                    <h4>Key Achievements:</h4>
-                    <ul>
-                        <li><strong>System Architecture:</strong> Led design and implementation of modular, event-driven Python application with dependency injection, hardware abstraction, vendor integrations, and communication layers</li>
-                        <li><strong>Hardware Integration:</strong> Developed comprehensive Hardware Abstraction Layer (HAL) interfacing with ARM64-based Linux systems, mainboard microcontrollers, QR scanners, touchscreens, CCTV cameras, Bluetooth modules, and solar charging systems</li>
-                        <li><strong>Multi-Protocol Communication:</strong> Implemented secure communication systems supporting Bluetooth BLE, GSM/HTTP, MQTT, and serial protocols with RSA/AES encryption for remote locker management</li>
-                        <li><strong>Vendor Integration:</strong> Built vendor-specific modules supporting multiple logistics providers (Arka, Austrian Post, Penguin) with configurable business logic and API integrations</li>
-                        <li><strong>CCTV & Security:</strong> Redesigned multi-camera surveillance system with master/slave camera switching, encrypted video storage, and real-time monitoring</li>
-                        <li><strong>DevOps & Deployment:</strong> Created automated configuration management, SSH-based remote updates, and fleet management tools</li>
-                    </ul>
+                <div class="job-description">
+                    <p>Architected and developed a comprehensive autonomous locker management system using Python, managing IoT hardware integration, multi-vendor communication protocols, and real-time embedded systems control for smart parcel delivery infrastructure.</p>
+                    
+                    <div class="achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li><strong>System Architecture:</strong> Led design and implementation of modular, event-driven Python application with dependency injection, hardware abstraction, vendor integrations, and communication layers</li>
+                            <li><strong>Hardware Integration:</strong> Developed comprehensive Hardware Abstraction Layer (HAL) interfacing with ARM64-based Linux systems, mainboard microcontrollers, QR scanners, touchscreens, CCTV cameras, Bluetooth modules, and solar charging systems</li>
+                            <li><strong>Multi-Protocol Communication:</strong> Implemented secure communication systems supporting Bluetooth BLE, GSM/HTTP, MQTT, and serial protocols with RSA/AES encryption for remote locker management</li>
+                            <li><strong>Vendor Integration:</strong> Built vendor-specific modules supporting multiple logistics providers (Arka, Austrian Post, Penguin) with configurable business logic and API integrations</li>
+                            <li><strong>CCTV & Security:</strong> Redesigned multi-camera surveillance system with master/slave camera switching, encrypted video storage, and real-time monitoring</li>
+                            <li><strong>DevOps & Deployment:</strong> Created automated configuration management, SSH-based remote updates, and fleet management tools</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python, asyncio, GTK4/PyGObject, dbus-python, OpenCV, Bluetooth (BlueZ), cryptography (RSA/AES), MQTT (Paho), SQLite, Serial Communication, ARM64 Linux, systemd, SSH/Paramiko
+                    </div>
                 </div>
-                
-                <div class="tech-stack">
-                    <strong>Technologies:</strong> Python, asyncio, GTK4/PyGObject, dbus-python, OpenCV, Bluetooth (BlueZ), cryptography (RSA/AES), MQTT (Paho), SQLite, Serial Communication, ARM64 Linux, systemd, SSH/Paramiko
-                </div>
             </div>
-        </div>
 
-        <div class="job">
-            <div class="job-header">
-                <div class="company">Stefanini Romania SRL, Bucharest</div>
+            <div class="role">
                 <div class="position">Mobile Lead Developer - FAN Box Parcel-Locker User App</div>
                 <div class="duration">November 2021 – Present</div>
-            </div>
-            <div class="job-description">
-                <p>Led development of a sophisticated multi-module Android application for FANbox smart locker management system, serving clients, couriers, technicians, and partners.</p>
-                
-                <div class="achievements">
-                    <h4>Key Achievements:</h4>
-                    <ul>
-                        <li><strong>Architecture:</strong> Architected scalable multi-module Android application using MVVM pattern supporting 3,000+ lockers</li>
-                        <li><strong>Hardware Integration:</strong> Developed hardware integration layer for serial communication with IoT locker systems, implementing QR scanning and GSM connectivity</li>
-                        <li><strong>User Management:</strong> Built comprehensive user role management system supporting 4 distinct user types with role-specific workflows</li>
-                        <li><strong>Offline-First:</strong> Implemented robust offline-first architecture with Room database, API synchronization, and conflict resolution</li>
-                        <li><strong>Payment Integration:</strong> Integrated SymphoPay payment processing with secure transaction handling</li>
-                        <li><strong>Real-time Features:</strong> Created WebSocket integration for live locker status updates and push notifications</li>
-                    </ul>
+                <div class="job-description">
+                    <p>Led development of a sophisticated multi-module Android application for FANbox smart locker management system, serving clients, couriers, technicians, and partners.</p>
+                    
+                    <div class="achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li><strong>Architecture:</strong> Architected scalable multi-module Android application using MVVM pattern supporting 3,000+ lockers</li>
+                            <li><strong>Hardware Integration:</strong> Developed hardware integration layer for serial communication with IoT locker systems, implementing QR scanning and GSM connectivity</li>
+                            <li><strong>User Management:</strong> Built comprehensive user role management system supporting 4 distinct user types with role-specific workflows</li>
+                            <li><strong>Offline-First:</strong> Implemented robust offline-first architecture with Room database, API synchronization, and conflict resolution</li>
+                            <li><strong>Payment Integration:</strong> Integrated SymphoPay payment processing with secure transaction handling</li>
+                            <li><strong>Real-time Features:</strong> Created WebSocket integration for live locker status updates and push notifications</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Kotlin, Android SDK, MVVM, Room Database, Retrofit, WebSocket, Material Design, GitLab CI/CD, SymphoPay API
+                    </div>
                 </div>
-                
-                <div class="tech-stack">
-                    <strong>Technologies:</strong> Kotlin, Android SDK, MVVM, Room Database, Retrofit, WebSocket, Material Design, GitLab CI/CD, SymphoPay API
-                </div>
             </div>
-        </div>
 
-        <div class="job">
-            <div class="job-header">
-                <div class="company">Stefanini Romania SRL, Bucharest</div>
+            <div class="role">
                 <div class="position">Android Developer</div>
                 <div class="duration">May 2016 – October 2021</div>
-            </div>
-            <div class="job-description">
-                <p>Delivered 10+ consumer applications for Geronimo Agency clients, managing full development lifecycle from conception to Play Store deployment.</p>
-                
-                <div class="achievements">
-                    <h4>Notable Projects:</h4>
-                    <ul>
-                        <li><strong>YoupiJob:</strong> Home-services marketplace platform</li>
-                        <li><strong>Bio c' Nous:</strong> Customer loyalty and community engagement application</li>
-                        <li><strong>Pinql:</strong> Rental-property platform</li>
-                    </ul>
+                <div class="job-description">
+                    <p>Delivered 10+ consumer applications for Geronimo Agency clients, managing full development lifecycle from conception to Play Store deployment.</p>
+                    
+                    <div class="achievements">
+                        <h4>Notable Projects:</h4>
+                        <ul>
+                            <li><strong>YoupiJob:</strong> Home-services marketplace platform</li>
+                            <li><strong>Bio c' Nous:</strong> Customer loyalty and community engagement application</li>
+                            <li><strong>Pinql:</strong> Rental-property platform</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
